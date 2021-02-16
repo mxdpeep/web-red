@@ -16,32 +16,32 @@ info:
 	@echo "🆘 \e[0;1mmake sync\e[0m - sync to dev site\n"
 
 installnode:
-	@echo "\n🔨 \e[1;32m Installing ...\e[0m"
-	@/bin/bash ./bin/nodejs13.sh
+	@echo "🔨 \e[1;32m Installing ...\e[0m"
+	@bash ./bin/nodejs13.sh
 
 installgo:
-	@echo "\n🔨 \e[1;32m Installing ...\e[0m"
-	@/bin/bash ./bin/go.sh
+	@echo "🔨 \e[1;32m Installing ...\e[0m"
+	@sudo bash ./bin/go.sh
 
 installhugo:
-	@echo "\n🔨 \e[1;32m Installing ...\e[0m"
-	@/bin/bash ./bin/hugo.sh
+	@echo "🔨 \e[1;32m Installing ...\e[0m"
+	@bash ./bin/hugo.sh
 
 setdev:
-	@echo "\n🔨 \e[1;32m Installing ...\e[0m"
-	@/bin/bash ./bin/setdev.sh
+	@echo "🔨 \e[1;32m Installing ...\e[0m"
+	@bash ./bin/setdev.sh
 
 sync:
-	@echo "\n🔨 \e[1;32m Syncing ...\e[0m"
-	@/bin/bash ./bin/sync.sh
+	@echo "🔨 \e[1;32m Syncing ...\e[0m"
+	@bash ./bin/sync.sh
 
 icons:
-	@echo "\n🔨 \e[1;32m Converting ...\e[0m"
-	@/bin/bash ./bin/makeicons.sh
+	@echo "🔨 \e[1;32m Converting ...\e[0m"
+	@bash ./bin/makeicons.sh
 
 checkdev:
-	@echo "\n🔨 \e[1;32m Checking ...\e[0m"
-	@/bin/bash ./bin/checkdev.sh
+	@echo "🔨 \e[1;32m Checking ...\e[0m"
+	@bash ./bin/checkdev.sh
 
 build:
 	yarn build

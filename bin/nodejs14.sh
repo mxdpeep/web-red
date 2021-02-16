@@ -7,7 +7,7 @@ dir="$(dirname "$0")"
 command -v nodejs >/dev/null 2>&1 || {
   info "Installing Node.js ..."
   sudo snap remove node
-  sudo snap install node --channel=13/stable --classic
+  sudo snap install node --channel=14/stable --classic
 }
 
 exit 0
